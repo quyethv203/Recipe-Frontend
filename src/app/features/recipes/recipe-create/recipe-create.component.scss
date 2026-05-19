@@ -1,0 +1,43 @@
+.create-form { padding: 20px; }
+.create-form h3 { margin: 20px 0 10px; }
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.repeat-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 8px;
+  margin-bottom: 8px;
+  align-items: start;
+}
+
+.step-row {
+  display: grid;
+  grid-template-columns: 24px 3fr 1fr auto;
+  gap: 8px;
+  margin-bottom: 10px;
+  align-items: start;
+}
+
+.step-no {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.actions { margin-top: 20px; }
+
+@media (max-width: 720px) {
+  .row { grid-template-columns: 1fr 1fr; }
+}

@@ -1,0 +1,75 @@
+:root {
+  --color-primary: #ef6c00;
+  --color-primary-dark: #c25400;
+  --color-bg: #fffaf5;
+  --color-surface: #ffffff;
+  --color-text: #1f1f1f;
+  --color-muted: #6b6b6b;
+  --color-border: #e6e0d8;
+  --color-danger: #d32f2f;
+  --radius: 10px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08);
+  --font-base: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  font-family: var(--font-base);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+a { color: var(--color-primary); text-decoration: none; }
+a:hover { color: var(--color-primary-dark); text-decoration: underline; }
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  font-weight: 500;
+  transition: background 0.15s ease;
+}
+button:hover:not(:disabled) { background: var(--color-primary-dark); border-color: var(--color-primary-dark); }
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+button.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+}
+button.btn-secondary:hover:not(:disabled) {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  padding: 8px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text);
+  width: 100%;
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(239, 108, 0, 0.15);
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 16px;
+}
+
+.form-field { margin-bottom: 14px; }
+.form-field label { display: block; font-weight: 500; margin-bottom: 4px; font-size: 14px; }
+.error-text { color: var(--color-danger); font-size: 13px; margin-top: 4px; }

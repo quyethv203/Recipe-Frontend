@@ -1,0 +1,42 @@
+.cook-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.cook-wrap header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 18px;
+}
+
+.step-indicator {
+  color: var(--color-muted);
+  font-size: 14px;
+}
+
+.step-box {
+  padding: 28px;
+  text-align: center;
+}
+
+.instruction {
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 0 0 18px;
+}
+
+.timer {
+  font-family: 'Inter', monospace;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 16px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+}

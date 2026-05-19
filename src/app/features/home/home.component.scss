@@ -1,0 +1,34 @@
+.hero {
+  background: linear-gradient(135deg, rgba(239, 108, 0, 0.08), rgba(239, 108, 0, 0.02));
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin: 0 0 12px;
+  color: var(--color-text);
+}
+
+.hero p {
+  font-size: 17px;
+  color: var(--color-muted);
+  max-width: 640px;
+  margin: 0 auto 24px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 40px 16px;
+}
+
+.features h3 { margin: 0 0 8px; }
+.features p { margin: 0; color: var(--color-muted); font-size: 14px; }
