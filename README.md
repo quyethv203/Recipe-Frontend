@@ -95,18 +95,3 @@ frontend/
 
 Đổi `environment.apiBaseUrl` trong [src/environments/](src/environments/) nếu deploy tách domain.
 
-## 7. Quy ước code (tham khảo CLAUDE.md)
-
-- Standalone components, **OnPush change detection**, **Signals** cho state nội bộ.
-- Lazy-load từng feature.
-- JWT lưu ở `localStorage` (key: `rs.access`, `rs.refresh`, `rs.user`); `auth.interceptor` tự thêm `Authorization: Bearer …` cho mọi request (trừ `/auth/login`, `/auth/register`).
-- `error.interceptor` tự logout + redirect `/auth/login` khi gặp 401.
-
-## 8. Việc còn lại (TODO sau scaffold)
-
-- [ ] Thêm Material/PrimeNG nếu cần component phong phú
-- [ ] Hoàn thiện kéo-thả Meal Planner (CDK DragDrop)
-- [ ] Comments UI với nested reply
-- [ ] Search filter recipes (category, difficulty, time)
-- [ ] Nutrition breakdown trên recipe detail
-- [ ] Unit test cho services + components
